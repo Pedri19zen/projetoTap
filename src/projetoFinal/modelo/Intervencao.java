@@ -2,6 +2,7 @@ package projetoFinal.modelo;
 
 import java.io.Serializable;
 
+// intervencao agendada/realizada na clinica: liga um vet, um animal e um cliente numa dada data/hora
 public class Intervencao implements Serializable {
     private int id;
     private String tipo;
@@ -97,6 +98,8 @@ public class Intervencao implements Serializable {
         this.distanciaKm = distanciaKm;
     }
 
+    // calcula o custo: preco por tipo, com escalao para animais com mais de 10kg
+    // e soma 40 + distancia se houver deslocacao
     public double calcularCusto() {
         double custo = 0.0;
         if (animal != null) {

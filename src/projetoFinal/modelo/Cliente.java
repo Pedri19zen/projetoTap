@@ -3,6 +3,7 @@ package projetoFinal.modelo;
 import java.io.Serializable;
 import java.util.ArrayList;
 
+// cliente da clinica, tem uma morada, contacto e uma lista de animais
 public class Cliente implements Serializable {
     private String nif;
     private String nome;

@@ -33,6 +33,7 @@ public class GestorIntervencoesTxt {
         int numLinha = 0;
         while (linha != null) {
             numLinha++;
+            // try/catch por linha: se uma linha estiver corrompida, e ignorada e o resto carrega na mesma
             try {
                 String[] p = linha.split(";");
                 if (p.length >= 9) {

@@ -2,6 +2,7 @@ package projetoFinal.modelo;
 
 import java.io.Serializable;
 
+// veterinario da clinica, identificado pelo NIF
 public class Veterinario implements Serializable {
     private String nif;
     private String nome;

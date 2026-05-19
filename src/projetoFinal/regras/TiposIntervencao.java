@@ -2,6 +2,7 @@ package projetoFinal.regras;
 
 import java.util.ArrayList;
 
+// lista fixa dos tipos de intervencao aceites pelo sistema
 public class TiposIntervencao {
 
     public static ArrayList<String> obter() {

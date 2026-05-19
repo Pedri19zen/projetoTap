@@ -123,11 +123,13 @@ public class MenuGestao {
         System.out.println("Veterinario inserido.");
     }
 
+    // recolhe todos os dados necessarios e cria uma nova intervencao se o vet tiver disponibilidade
     public void agendarIntervencao() {
         System.out.println();
         System.out.println("--- Agendar intervencao ---");
         String tipo = LeitorIntervencao.lerTipo(sc);
         String data = LeitorTempo.lerData(sc);
+        // nao permitir agendar intervencoes no passado
         if (data.compareTo(clinica.getDataHoje()) < 0) {
             System.out.println("Data no passado. Use uma data igual ou superior a hoje.");
             return;
@@ -259,6 +261,7 @@ public class MenuGestao {
         }
     }
 
+    // mostra todas as intervencoes do cliente e pede ao utilizador para escolher quais entram no recibo
     public void emitirRecibo() {
         System.out.println();
         System.out.println("--- Emitir recibo ---");
@@ -303,6 +306,7 @@ public class MenuGestao {
                 System.out.println("Intervencao nao pertence ao cliente.");
                 return;
             }
+            // impede que a mesma intervencao seja adicionada duas vezes ao recibo
             boolean jaIncluida = false;
             for (int k = 0; k < incluidas.size(); k++) {
                 if (incluidas.get(k).getId() == id) {

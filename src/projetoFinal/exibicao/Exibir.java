@@ -6,6 +6,7 @@ import projetoFinal.modelo.Cliente;
 import projetoFinal.modelo.Clinica;
 import projetoFinal.modelo.Veterinario;
 
+// metodos auxiliares para mostrar listas (vets, clientes, animais) no ecra
 public class Exibir {
 
     public static void mostrarVeterinariosDisponiveis(Clinica clinica) {

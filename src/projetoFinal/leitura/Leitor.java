@@ -2,8 +2,11 @@ package projetoFinal.leitura;
 
 import java.util.Scanner;
 
+// metodos auxiliares para ler input do utilizador
+// todos seguem o mesmo padrao: pedem o input em ciclo ate o valor ser valido
 public class Leitor {
 
+    // le texto nao vazio e que nao contenha ; (porque ; e o separador nos ficheiros .txt)
     public static String lerTexto(Scanner sc, String mensagem) {
         String valor = "";
         boolean valido = false;
@@ -65,6 +68,7 @@ public class Leitor {
         return valor;
     }
 
+    // le um double dentro de um intervalo [minimo, maximo] e rejeita NaN/Infinity
     public static double lerDoubleEntre(Scanner sc, String mensagem, double minimo, double maximo) {
         double valor = minimo;
         boolean valido = false;

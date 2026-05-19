@@ -8,6 +8,8 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import projetoFinal.modelo.Clinica;
 
+// gestor da persistencia binaria: grava e le o objeto Clinica num ficheiro .dat
+// usa Serializable, e mais rapido mas o ficheiro nao e legivel para humanos
 public class GestorDat {
 
     public static void gravar(Clinica clinica) {

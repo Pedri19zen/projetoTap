@@ -9,6 +9,8 @@ import projetoFinal.modelo.Clinica;
 import projetoFinal.modelo.Intervencao;
 import projetoFinal.modelo.Veterinario;
 
+// gestor de persistencia em texto: cada entidade tem o seu proprio ficheiro .txt
+// e mais lento que o .dat mas fica legivel para humanos
 public class GestorTxt {
 
     public static void gravar(Clinica clinica) {

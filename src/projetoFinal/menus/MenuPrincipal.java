@@ -26,10 +26,12 @@ public class MenuPrincipal {
     }
 
     public void executar() {
+        // ordem de carregamento dos dados: primeiro .dat (mais rapido), depois .txt, e por fim mock
         boolean carregou = GestorDat.ler(clinica);
         if (!carregou) {
             GestorTxt.ler(clinica);
         }
+        // se mesmo assim a clinica estiver vazia, sao carregados os dados iniciais
         DadosIniciais.popular(clinica);
         int opcao = -1;
         try {

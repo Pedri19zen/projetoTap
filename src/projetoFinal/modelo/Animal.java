@@ -2,6 +2,7 @@ package projetoFinal.modelo;
 
 import java.io.Serializable;
 
+// representa um animal de um cliente da clinica
 public class Animal implements Serializable {
     private int id;
     private String nome;

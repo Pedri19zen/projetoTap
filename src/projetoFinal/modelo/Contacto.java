@@ -2,6 +2,7 @@ package projetoFinal.modelo;
 
 import java.io.Serializable;
 
+// dados de contacto (email + telefone) e qual o metodo preferido
 public class Contacto implements Serializable {
     private String email;
     private String telefone;

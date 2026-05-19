@@ -2,6 +2,7 @@ package projetoFinal.modelo;
 
 import java.io.Serializable;
 
+// morada de um cliente: rua, numero, codigo postal e localidade
 public class Morada implements Serializable {
     private String rua;
     private int numero;

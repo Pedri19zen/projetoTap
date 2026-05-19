@@ -12,6 +12,8 @@ import projetoFinal.persistencia.txt.GestorClientesTxt;
 import projetoFinal.persistencia.txt.GestorIntervencoesTxt;
 import projetoFinal.persistencia.txt.GestorVeterinariosTxt;
 
+// carrega dados de exemplo da pasta "mock" quando a clinica esta vazia
+// (primeira execucao ou se .dat e .txt falharem ambos)
 public class DadosIniciais {
     private static final String PASTA_MOCK = "mock";
 

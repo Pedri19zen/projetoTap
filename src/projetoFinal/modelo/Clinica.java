@@ -4,11 +4,14 @@ import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
 
+// classe principal que guarda toda a informacao da clinica:
+// listas de veterinarios, clientes, animais e intervencoes
 public class Clinica implements Serializable {
     private ArrayList<Veterinario> veterinarios;
     private ArrayList<Cliente> clientes;
     private ArrayList<Animal> animais;
     private ArrayList<Intervencao> intervencoes;
+    // data simulada de "hoje" - usada para distinguir intervencoes passadas de agendadas
     private String dataHoje = "2026-04-23";
     private String pastaDados = "dados";
 
@@ -142,6 +145,7 @@ public class Clinica implements Serializable {
         return null;
     }
 
+    // procura o maior id existente e devolve +1, para nao haver ids repetidos
     public int proximoIdAnimal() {
         int maior = 0;
         for (int i = 0; i < animais.size(); i++) {
