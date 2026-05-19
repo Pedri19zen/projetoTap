@@ -1,0 +1,3 @@
+500000001;Veterinario 1;OV1;veterinario1@clinica.pt;910000001;email
+500000002;Veterinario 2;OV2;veterinario2@clinica.pt;910000002;telefone
+500000003;Veterinario 3;OV3;veterinario3@clinica.pt;910000003;email
